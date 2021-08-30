@@ -1,7 +1,9 @@
 import React from 'react'
-import HornedBeast from './HornedBeast'
-import HornedBeast1 from './HornedBeast1'
-import HornedBeast2 from './HornedBeast2'
+import HornedBeast from './components/HornedBeast'
+import uniwhal from './assets/uniwhal.jpg'
+import rhino from './assets/rhino.jpg'
+import unicornhead from './assets/unicorn-head.jpg'
+
 
 
 class Main extends React.Component
@@ -11,9 +13,9 @@ class Main extends React.Component
     return(
       <>
       <main>
-          <HornedBeast></HornedBeast>
-          <HornedBeast1></HornedBeast1>
-          <HornedBeast2></HornedBeast2>
+          <HornedBeast name='uniWhal' imgUrl={uniwhal}/>
+          <HornedBeast name='rhino' imgUrl={rhino}/>
+          <HornedBeast name='unicorn head' imgUrl={unicornhead}/>
       </main>
       </>
     )
