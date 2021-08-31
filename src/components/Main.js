@@ -6,7 +6,7 @@ class Main extends React.Component
 {
   render() {
     return (
-      <div >
+    <div >
         {data.map(item=>{
           return(
             <HornedBeast  name={item.title} imgUrl={item.image_url} description={item.description}  />
