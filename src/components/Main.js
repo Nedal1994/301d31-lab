@@ -1,6 +1,6 @@
 import React from 'react'
-import HornedBeast from './components/HornedBeast'
-import data from '../assets/data.json'
+import HornedBeast from './HornedBeast'
+import data from './data.json'
 
 class Main extends React.Component
 {
@@ -9,7 +9,7 @@ class Main extends React.Component
       <div >
         {data.map(item=>{
           return(
-            <HornedBeast  name={item.title} imgUrl={item.image_url}  />
+            <HornedBeast  name={item.title} imgUrl={item.image_url} description={item.description}  />
           );
         })}
 

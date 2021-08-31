@@ -31,7 +31,9 @@ class HornedBeast extends React.Component {
             <Card.Text>
               Number of votes: {this.state.numberOfVotes}
             </Card.Text>
-            {/* <Button variant="primary">Go somewhere</Button> */}
+            <Card.Text>
+              {this.props.description}
+            </Card.Text>
           </Card.Body>
         </Card>
         </div>
