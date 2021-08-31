@@ -1,6 +1,7 @@
 import React from 'react'
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+
 
 
 class HornedBeast extends React.Component {
@@ -27,11 +28,14 @@ class HornedBeast extends React.Component {
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={this.props.imgUrl} onClick={this.incrementVotes} />
           <Card.Body>
-            <Card.Title>{this.props.name}</Card.Title>
+            <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
               Number of votes: {this.state.numberOfVotes}
             </Card.Text>
-            {/* <Button variant="primary">Go somewhere</Button> */}
+            <Card.Text>
+              {this.props.description}
+            </Card.Text>
+            <Button variant="primary" onClick={this.props.show}>View details</Button>
           </Card.Body>
         </Card>
         </div>
@@ -39,5 +43,4 @@ class HornedBeast extends React.Component {
     )
   }
 }
-
-export default HornedBeast
+export default HornedBeast;
