@@ -1,3 +1,4 @@
+
 import React from 'react'
 // import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -20,6 +21,7 @@ class HornedBeast extends React.Component {
           numberOfVotes : this.state.numberOfVotes + 1
         }
       )
+      this.props.showModel(this.props.data)
     }
     render() {
     return (
