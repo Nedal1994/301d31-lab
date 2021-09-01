@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component
 {
+  // lab 2
   render()
   {
     return(
