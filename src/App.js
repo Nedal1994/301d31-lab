@@ -21,7 +21,7 @@ class App extends React.Component
     show = (data) => {
       this.setState({
         show : true,
-        data : data
+        selectedData : data
       }
     )}
 
@@ -32,20 +32,6 @@ class App extends React.Component
       })
     
     }
-    SelectedBeast = () =>
-    {
-      const item = data.filter(item => {
-        if(item.title===title)
-        {
-          return title;
-        }
-      }
-        
-      )
-      this.setState({
-        selectedData : item
-      })
-    }
   render()
   {
     return(
@@ -54,6 +40,7 @@ class App extends React.Component
       <Main data={this.state.data}
       show={this.show}/>
       <SelectedBeast show={this.state.show}
+      data={this.state.selectedData}
       handleClose={this.handleClose}/>
       <Footer/>
       </>
