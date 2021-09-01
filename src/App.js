@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends React.Component {
   // lab 2 fix
   // lab 3 fix
+  // lab 4
   constructor(props) {
     super(props);
     this.state = {
