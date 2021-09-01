@@ -9,7 +9,10 @@ class Main extends React.Component
     <div >
         {data.map(item=>{
           return(
-            <HornedBeast  name={item.title} imgUrl={item.image_url} description={item.description}  />
+            <HornedBeast  name={item.title} imgUrl={item.image_url} description={item.description}  
+            showModel={this.props.show}
+            data={item}
+            />
           );
         })}
 
